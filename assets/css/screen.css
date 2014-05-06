@@ -817,6 +817,31 @@ margin on the iframe, cause it breaks stuff. */
     color: #9EABB3;
 }
 
+.older-comic-posts,
+.newer-comic-posts {
+    position: absolute;
+    display: inline-block;
+    padding: 0 15px;
+    border: #EBF2F6 2px solid;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: border ease 0.3s;
+}
+
+.older-comic-posts {
+    left: 0;
+}
+
+.newer-comic-posts {
+    right: 0;
+}
+
+.older-comic-posts:hover,
+.newer-comic-posts:hover {
+    border-color: #9EABB3;
+}
+
+
 /* Push the previous/next links out to the left/right */
 .older-posts,
 .newer-posts {
@@ -1121,6 +1146,12 @@ margin on the iframe, cause it breaks stuff. */
 
     .post-footer .share a {
         margin: 1.4rem 0.8rem 0 0.8rem;
+    }
+
+    .older-comic-posts,
+    .newer-comic-posts {
+      position: static;
+      margin: 10px 0;
     }
 
     .older-posts,

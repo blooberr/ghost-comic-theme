@@ -1,12 +1,13 @@
 <nav class="pagination">
     <div>
       {{#if next}}
-          <!-- <a class="older-posts" href="{{page_url next}}">&larr; Older posts</a>-->
-        <a href="{{page_url next}}"> Prev Comic &larr; </a>
+        <a class="older-comic-posts" href="{{page_url next}}"> Prev Comic &larr; </a>
       {{/if}}
-        <span class="page-number">Page {{page}} of {{pages}}</span>
+        
+      <span class="page-number">Book 1 of 5 | Chapter 1 of ?? | Page {{page}} of {{pages}}</span>
+
       {{#if prev}}
-        <a href="{{page_url prev}}"> Next Comic &rarr; </a>
+        <a class="newer-comic-posts" href="{{page_url prev}}"> Next Comic &rarr; </a>
       {{/if}}
 	</div>
 </nav>
