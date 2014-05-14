@@ -15,12 +15,12 @@
 </header>
 
 {{! The main content area on the homepage }}
-<main class="content" role="main">
-
+<main class="content" role="main"">
+    
     {{pagination}}
 
     {{! Each post will be output using this markup }}
-<!--    {{#foreach posts}} -->
+    {{#foreach posts}}
 
     <article class="{{post_class}}">
         <header class="post-header">
@@ -31,10 +31,10 @@
         <section class="post-content">
           {{content}}
         </section>
-
+      
     </article>
 
-<!--    {{/foreach}} -->
+    {{/foreach}}
 
     {{!! After all the posts, we have the previous/next pagination links }}
     {{pagination}}

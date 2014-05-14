@@ -169,6 +169,8 @@ body {
     font-size: 2.0rem;
     line-height: 1.6em;
     color: #3A4145;
+    //background-image:url("geometry.png");
+    //background-repeat:repeat-y;
 }
 
 ::-moz-selection {
@@ -503,6 +505,7 @@ margin on the iframe, cause it breaks stuff. */
     border-bottom: #EBF2F6 1px solid;
     word-break: break-word;
     hyphens: auto;
+    //background-color: #fff;
 }
 
 /* Add a little circle in the middle of the border-bottom on our .post
@@ -543,11 +546,11 @@ margin on the iframe, cause it breaks stuff. */
     margin: 0 0 5px 0;
     font-family: 'Open Sans', sans-serif;
     font-size: 1.5rem;
-    color: #9EABB3;
+    color: #3f4447;
 }
 
 .post-meta a {
-    color: #9EABB3;
+    color: #3f4447;
     text-decoration: none;
 }
 
@@ -809,12 +812,12 @@ margin on the iframe, cause it breaks stuff. */
     margin: 4rem auto;
     font-family: 'Open Sans', sans-serif;
     font-size: 1.3rem;
-    color: #9EABB3;
+    color: #3f4447;
     text-align: center;
 }
 
 .pagination a {
-    color: #9EABB3;
+    color: #3f4447;
 }
 
 .older-comic-posts,
