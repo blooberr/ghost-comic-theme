@@ -1,11 +1,13 @@
 <nav class="pagination">
       
       {{#if next}}
-        <a class="older-comic-posts" href="{{page_url next}}"> Prev Comic &larr; </a>
+        <a class="older-comic-posts" href="{{page_url next}}"> &larr; Prev Comic</a>
       {{/if}}
-        
-      <span class="page-number">Book 1 of 5 | Chapter 1 of ?? | Page {{page}} of {{pages}}</span>
 
+      <span>
+        [<a href="http://too-many-curti.ghost.io/table-of-contents/">Table of Contents</a>]
+      </span>
+   
       {{#if prev}}
         <a class="newer-comic-posts" href="{{page_url prev}}"> Next Comic &rarr; </a>
       {{/if}}
