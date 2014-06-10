@@ -21,9 +21,14 @@
         {{! Everything inside the #post tags pulls data from the post }}
         {{#post}}
 
-            <span class="post-meta"><time datetime="{{date format="YYYY-MM-DD"}}">{{date format='DD MMM YYYY'}}</time> {{tags prefix="on " separator=" | "}}</span>
+            <div>
+              Back to [<a href="http://too-many-curti.ghost.io/table-of-contents/">Table of Contents</a>]
+            </div>
+            <span class="post-meta">Posted on <time datetime="{{date format="YYYY-MM-DD"}}">{{date format='DD MMM YYYY'}}</time> | 
+              <a href="#disqus_thread">Comments</a>
+            </span>
 
-            <h1 class="post-title">{{{title}}}</h1>
+            <h1 class="post-title">{{{title}}} ({{id}}) </h1>
 
             <section class="post-content">
                 {{content}}
@@ -58,13 +63,17 @@
 
             </footer>
 
+            <div id="disqus_thread"></div>
         {{/post}}
 
-<div id="disqus_thread"></div>
-    <script type="text/javascript">
+    </article>
+
+</main>
+
+<script type="text/javascript">
         /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
         var disqus_shortname = 'toomanycurti'; // required: replace example with your forum shortname
-        var disqus_identifier = '{{post.id}}';
+        var disqus_identifier = '{{url}}';
 
         /* * * DON'T EDIT BELOW THIS LINE * * */
         (function() {
@@ -76,7 +85,5 @@
     <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
     <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 
-    </article>
 
-</main>
 
